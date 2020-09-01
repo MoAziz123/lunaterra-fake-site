@@ -1,5 +1,7 @@
 import React from 'react'
-
+import starwindow from '../assets/images/undraw_starry_window_ppm0.svg'
+import explore from '../assets/images/undraw_explore_7ofa.svg'
+import flight from '../assets/images/undraw_Outer_space_drqu.svg'
 /**
  * @class - Process
  * @description - contains 3 different slides showing the process to user
@@ -15,31 +17,31 @@ export default class Process extends React.Component
                 <div className="process-cards">
                     <div className="process-card">
                         <div className="left">
-                            <img src=""/>
+                            <img src={starwindow}/>
 
                         </div>
                         <div className="right">
-                            <h1>Fabrication Matter Drive</h1>
+                            <h1>The Dream</h1>
+                            <p>When we first started out as LunaTerra, we wanted to envision a way in which we could conquer the final barrier to civilization: the stars. We spent years working on the technology you see today, our most brilliant minds put to the very limit of human endurance to come up with a solution.</p>
+                        </div>
+                    </div>
+                    <div className="process-card" >
+                        <div className="left">
+                            <img src={flight}/>
+
+                        </div>
+                        <div className="right">
+                            <h1>The Flight</h1>
                             <p>Lorem ipsum</p>
                         </div>
                     </div>
                     <div className="process-card">
                         <div className="left">
-                            <img src=""/>
+                            <img src={explore}/>
 
                         </div>
                         <div className="right">
-                            <h1>Fabrication Matter Drive</h1>
-                            <p>Lorem ipsum</p>
-                        </div>
-                    </div>
-                    <div className="process-card">
-                        <div className="left">
-                            <img src=""/>
-
-                        </div>
-                        <div className="right">
-                            <h1>Fabrication Matter Drive</h1>
+                            <h1>The Stars</h1>
                             <p>Lorem ipsum</p>
                         </div>
                     </div>

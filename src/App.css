@@ -77,21 +77,27 @@
 }
 
 /*****ABOUT******/
-.about-wrapper
+.section2
 {
   background-color:whitesmoke;
+  
+
+}
+.about-wrapper
+{
+  margin:0 5em 0 5em;
+
 }
 .about
 {
   display:flex;
   flex-direction: column;
   align-items:center;
-  margin:0 5em 0 5em;
 }
 
-.about h1
+.title-marker
 {
-
+  text-align:center;
   margin-bottom: 0;
   font-size:50px;
   font-family:'Candara';
@@ -100,18 +106,161 @@
 
 
 }
-.about h1::after
+.title-marker::after
 {
   content:"";
   display:block;
   margin:0 auto;
   width:25%;
   border-bottom:5px solid #0e1b3d;
-  padding-top:10px;
+  padding-top:15px;
 }
 .about p
 {
-  margin-top:3em;
+  margin:3em 1em 1em 1em;
   font-family:'Candara';
+  font-size:1.3em;
+}
+
+/****PROCESS****/
+.process
+{
+  margin:2em 5em 2em 5em;
+  
+  height:auto;
+  
+}
+
+.process-cards
+{
+  display:flex;
+  flex-direction:column;
+  
+}
+
+.process-card
+{
+  display:flex;
+  flex-direction:row;
+  font-family:'Candara';
+
+}
+.process-card:nth-of-type(even)
+{
+  flex-direction: row-reverse;
+}
+
+.left 
+{
+  background-color:#142954;
+  width:50%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.left img
+{
+  height:250px;
+  padding:1em;
+}
+
+.right
+{
+  padding-left:3em;
   color:gray;
+}
+.right h1
+{
+  color:#0e1b3d;
+}
+.right p
+{
+}
+.process-card .right 
+{
+  width:50%;
+}
+
+/****PAYMENTS****/
+.payments
+{
+  background:gainsboro;
+  display:flex;
+  flex-direction: column;
+}
+
+.payment-cards
+{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card
+{
+  width:30%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:'Candara';
+  border:1px solid black;
+  border-radius:15px;
+  margin:2em;
+  padding:1em;
+  color:black;
+  background-color:white;
+}
+.card ul
+{
+  list-style:none;
+}
+.card button
+{
+  border:1px solid black;
+  padding:1em;
+  width:40%;
+  
+}
+#best-card
+{
+  color:white;
+
+  background-image:url("./assets/images/flat-space-bg-normal.png")
+}
+#best-card button
+{
+  background-color:black;
+  color:white;
+  border:1px solid white;
+}
+/****FOOTER****/
+.footer
+{
+  background-color:#22272c;
+  width:100%;
+  font-family:'Candara';
+  display:flex;
+  padding:1em 0 .5em 0;
+  flex-direction: column;
+  align-items: center;
+  color:gray;
+}
+
+.social-links .icon
+{
+  margin:.2em;
+  padding-right:.5em;
+}
+.social-links .icon:hover
+{
+  color:white;
+  transition:250ms;
+  cursor: pointer;
+}
+.social-links .icon:not(:last-child)
+{
+  border-right: 1px solid gray;
+
 }

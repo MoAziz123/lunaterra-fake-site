@@ -13,10 +13,12 @@ export default class Footer extends React.Component
         return(
             <div className="footer">
                 <div className="social-links">
-                    <FontAwesome className="fa-2x fa-twitter"/>
-
+                    <FontAwesome className="fa-2x fa-twitter icon"/>
+                    <FontAwesome className="fa-2x fa-instagram icon"/>
+                    <FontAwesome className="fa-2x fa-snapchat icon"/>
+                    <FontAwesome className="fa-2x fa-linkedin icon"/>
                 </div>
-                <p>Copyright &copy; - LunaTerra 2020</p>
+                <p>Copyright &copy; - Mo Aziz 2020</p>
                 
 
             </div>

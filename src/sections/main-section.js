@@ -1,8 +1,10 @@
 import React from 'react'
 import About from '../components/about'
+import Process from '../components/process'
+import Payments from '../components/payments'
 
 /**
- * @class - StartSection
+ * @class - MainSection
  * @description - contains the about us component
  * @style - background should be offset white
  * typography should be candara 
@@ -10,12 +12,15 @@ import About from '../components/about'
  * 
  * 
  */
-export default class AboutSection extends React.Component
+export default class MainSection extends React.Component
 {
     render=()=>{
         return(
             <div className="section2">
                 <About/>
+                <Process/>
+                <Payments/>
+                
             </div>
         )
     }

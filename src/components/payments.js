@@ -12,29 +12,33 @@ export default class Payments extends React.Component
     render=()=>{
         return(
             <div className="payments">
-                <h1>Payments</h1>
+                <h1 class="title-marker">Payments</h1>
                 <div className="payment-cards">
                     <div className="card">
-                        <h2>Plan 1</h2>
+                        <h2>Basic</h2>
                         <ul>
                             <li></li>
                             <li></li>
                             <li></li>
                         </ul>
+                        <p>Only £3.99 a month!</p>
+
                         <button type="button">Subscribe</button>
                     </div>
                     <div className="card">
-                        <h2>Plan 2</h2>
+                        <h2>Flexi</h2>
                         <ul>
-                            <li></li>
-                            <li></li>
+                            <li>Free food in flight</li>
+                            <li>Ability to change scheduled flights</li>
                             <li></li>
                             <li></li>
                         </ul>
+                                                <p>Only £3.99 a month!</p>
+
                         <button type="button">Subscribe</button>
                     </div>
                     <div id="best-card" className="card">
-                        <h2>Plan 3</h2>
+                        <h2>Ultra</h2>
                         <ul>
                             <li></li>
                             <li></li>
@@ -42,6 +46,7 @@ export default class Payments extends React.Component
                             <li></li>
                             <li></li>
                         </ul>
+                        <p>Only £3.99 a month!</p>
                         <button type="button">Subscribe</button>
                     </div>
                 </div>
