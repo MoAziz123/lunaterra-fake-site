@@ -5,6 +5,10 @@
   background-image:url("./assets/images/flat-space-bg.png")
 
 }
+button:hover
+{
+  cursor:pointer;
+}
 /*******NAVBAR******/
 .nav-wrapper
 {
@@ -155,6 +159,7 @@
   background-color:#142954;
   width:50%;
   display:flex;
+  padding-right:3em;
   flex-direction: column;
   justify-content: center;
   
@@ -212,15 +217,30 @@
   color:black;
   background-color:white;
 }
+.card h1
+{
+  color:#0e1b3d;
+  border-bottom:1px solid #0e1b3d;
+}
+.card .price
+{
+  font-size:48px;
+  font-weight:800;
+}
 .card ul
 {
   list-style:none;
+  padding:1em;
+}
+.card ul li
+{margin:1em;
 }
 .card button
 {
   border:1px solid black;
   padding:1em;
   width:40%;
+  background-color:white;
   
 }
 #best-card
@@ -229,11 +249,37 @@
 
   background-image:url("./assets/images/flat-space-bg-normal.png")
 }
+#best-card .fa-check
+{
+  color:white;
+}
+#best-card h1
+{
+  color:white;
+  border:none;
+}
+#best-card ul
+{
+  background-color:rgba(0,0,0,0.3);
+
+}
 #best-card button
 {
   background-color:black;
   color:white;
   border:1px solid white;
+}
+#best-card button:hover
+{
+  transition: 500ms;
+  background-color:white;
+  color:black;
+}
+
+.fa-check
+{
+  margin-right:1em;
+  color:#0e1b3d;
 }
 /****FOOTER****/
 .footer

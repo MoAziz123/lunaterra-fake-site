@@ -1,4 +1,5 @@
 import React from 'react'
+import FontAwesome from 'react-fontawesome'
 
 /**
  * @class - Payments
@@ -15,38 +16,39 @@ export default class Payments extends React.Component
                 <h1 class="title-marker">Payments</h1>
                 <div className="payment-cards">
                     <div className="card">
-                        <h2>Basic</h2>
+                        <h1>Basic</h1>
+                        <text className="price">£499.99</text>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                        <li><FontAwesome className="fa fa-check"/>Catered for whilst you stay with us</li>
+                        <li><FontAwesome className="fa fa-check"/>One extra ticket</li>
+                        <li><FontAwesome className="fa fa-check"/>Free storage</li>
+                        <li><FontAwesome className="fa fa-check"/>Chance to enter a raffle</li>
                         </ul>
-                        <p>Only £3.99 a month!</p>
 
                         <button type="button">Subscribe</button>
                     </div>
                     <div className="card">
-                        <h2>Flexi</h2>
+                        <h1>Flexi</h1>
+                        <text className="price">£999.99</text>
                         <ul>
-                            <li>Free food in flight</li>
-                            <li>Ability to change scheduled flights</li>
-                            <li></li>
-                            <li></li>
+                        <li><FontAwesome className="fa fa-check"/>Upgrade to gourmet catering</li>
+                        <li><FontAwesome className="fa fa-check"/>Family ticket</li>
+                        <li><FontAwesome className="fa fa-check"/>Two storage rooms</li>
+                        <li><FontAwesome className="fa fa-check"/>Extra room</li>
                         </ul>
-                                                <p>Only £3.99 a month!</p>
 
                         <button type="button">Subscribe</button>
                     </div>
                     <div id="best-card" className="card">
-                        <h2>Ultra</h2>
+                        <h1>Ultra</h1>
+                        
+                        <text className="price">£1449.99</text>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><FontAwesome className="fa fa-check"/>Upgrade to Michelin catering</li>
+                            <li><FontAwesome className="fa fa-check"/>Floor space given</li>
+                            <li><FontAwesome className="fa fa-check"/>Free getaway craft in case of emergency</li>
+                            <li><FontAwesome className="fa fa-check"/>Medical support</li>
                         </ul>
-                        <p>Only £3.99 a month!</p>
                         <button type="button">Subscribe</button>
                     </div>
                 </div>
