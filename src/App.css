@@ -238,8 +238,8 @@ button:hover
 .card button
 {
   border:1px solid black;
-  padding:1em;
-  width:40%;
+  padding:1em 2em 1em 2em;
+  width:auto;
   background-color:white;
   
 }
@@ -309,4 +309,56 @@ button:hover
 {
   border-right: 1px solid gray;
 
+}
+
+/***MEDIA QUERIES***/
+@media only screen and (max-width:600px)
+{
+  .process-card img
+  {
+   
+  }
+  .process-card .left
+  {
+    width:25%;
+    height:3em;
+
+  }
+
+  .payment-cards
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .card
+  {
+    width:50%;
+  }
+  .card ul li:hover
+  {
+    cursor:pointer;
+    border-bottom:1px solid white;
+  }
+
+}
+
+/****ANIMATIONS****/
+
+.fade-in-top
+{
+    animation:fade-in-top 2s 1;
+}
+@keyframes fade-in-top
+{
+  0%{
+    opacity:0;
+    transform:translateY(-50px);
+  }
+  100%
+  {
+    opacity:1;
+    transform:translateY(0px);
+  }
 }

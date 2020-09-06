@@ -14,7 +14,7 @@ export default class Process extends React.Component
     render=()=>{
         return(
             <div className="process">
-                <div className="process-cards">
+                <div className="process-cards fade-in-top">
                     <div className="process-card">
                         <div className="left">
                             <img src={starwindow}/>

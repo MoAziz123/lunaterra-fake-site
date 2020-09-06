@@ -10,9 +10,14 @@ import Hero from '../components/hero'
  */
 export default class About extends React.Component
 {
+    handleScroll=(e)=>{
+        console.log(window.scrollY)
+        
+
+    }
     render=()=>{
         return(
-            <div className="about-wrapper">
+            <div className="about-wrapper" >
             <div className="about">
                 <h1 className="title-marker">Our Story</h1>
                 <p>At LunaTerra, we first discovered the existence of Mars-Mercury particles. Particles that are so fast, that they break the speed of light barrier.

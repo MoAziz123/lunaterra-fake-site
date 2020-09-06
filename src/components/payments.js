@@ -10,10 +10,11 @@ import FontAwesome from 'react-fontawesome'
  */
 export default class Payments extends React.Component
 {
+    
     render=()=>{
         return(
-            <div className="payments">
-                <h1 class="title-marker">Payments</h1>
+            <div className="payments" >
+                <h1 className="title-marker">Payments</h1>
                 <div className="payment-cards">
                     <div className="card">
                         <h1>Basic</h1>
