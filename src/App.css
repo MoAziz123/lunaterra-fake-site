@@ -46,6 +46,11 @@ button:hover
   margin-right:12px;
   font-size:14px;
 }
+.nav-bar ul li:hover
+{
+  cursor:pointer;
+  text-shadow:2px 2px 5px white;
+}
 
 /*******HERO******/
 .hero
