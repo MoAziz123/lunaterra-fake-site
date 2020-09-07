@@ -10,11 +10,23 @@ import FontAwesome from 'react-fontawesome'
  */
 export default class Payments extends React.Component
 {
-    
+
+    componentDidMount()
+    {
+        window.addEventListener('scroll', ()=>{
+            let payment = document.getElementsByClassName('payments')[0];
+            let process = document.getElementsByClassName('process')[0];
+            if(process.getBoundingClientRect().top < 0)
+            {
+              payment.classList.add('fade-in-top');
+            }
+        })
+    }
+  
     render=()=>{
         return(
-            <div className="payments" >
-                <h1 className="title-marker">Payments</h1>
+            <div className="payments fade-elem" >
+                <h1 className="title-marker" >Payments</h1>
                 <div className="payment-cards">
                     <div className="card">
                         <h1>Basic</h1>

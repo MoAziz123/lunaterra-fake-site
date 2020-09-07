@@ -11,10 +11,23 @@ import flight from '../assets/images/undraw_Outer_space_drqu.svg'
  */
 export default class Process extends React.Component
 {
+
+    componentDidMount()
+    {
+        window.addEventListener('scroll', ()=>{
+            let about = document.getElementsByClassName('about-wrapper')[0];
+            let process = document.getElementsByClassName('process')[0];
+            if(about.getBoundingClientRect().top < 0)
+            {
+            process.classList.add('fade-in-top');
+            }
+        })
+    }
+
     render=()=>{
         return(
-            <div className="process">
-                <div className="process-cards fade-in-top">
+            <div className="process fade-elem" >
+                <div className="process-cards">
                     <div className="process-card">
                         <div className="left">
                             <img src={starwindow}/>

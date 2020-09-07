@@ -11,9 +11,9 @@ export default class Hero extends React.Component
     render=()=>{
         return(
             <div className="hero">
-                <h1>Humanity's first hyperspace based transport</h1>
-                <p>At LunaTerra, we have devised a new method of travel - the hyperspace engine.</p>
-                <button>Start your journey</button>
+                <h1 className="fade-in-top">Humanity's first hyperspace based transport</h1>
+                <p className="fade-in-top">At LunaTerra, we have devised a new method of travel - the hyperspace engine.</p>
+                <button className="fade-in-top">Start your journey</button>
             </div>
         )
     }
